@@ -1,0 +1,5 @@
+<h1> Comments About Players </h1>
+
+<% @comments.each do |comment| %>
+    <p><%=link_to(comment.comments_on_players , comment_path(comment.id) )%> </p>
+    <% end %>
