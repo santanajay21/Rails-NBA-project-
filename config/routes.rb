@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
   get '/nba_players',to: 'nba_players#index'
   get '/nba_players/:id', to:'nba_players#show' ,as:'nba_player'
+  get '/comment'
 
   #highest_rated player 
 

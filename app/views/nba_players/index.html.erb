@@ -1,5 +1,8 @@
 <h1> All NBA Players</h1>
 
  <% @nba_players.each do |player| %>
-    <p><%=link_to(player.name_and_team , player_path(player.id) )%> </p>
+    <h2> <%= player.name%> - <%= player.team %> </h2>
+    <div>
+    <p> <%= player.comment %> </p>
+    <div>
     <% end %>
